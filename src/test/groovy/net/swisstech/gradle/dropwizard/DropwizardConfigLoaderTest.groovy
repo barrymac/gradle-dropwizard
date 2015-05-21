@@ -1,6 +1,7 @@
-package net.swisstech.gradle.dropwizard;
+package net.swisstech.gradle.dropwizard
 
-import groovy.util.GroovyTestCase
+import net.swisstech.dropwizard.DropwizardConfig
+import net.swisstech.dropwizard.DropwizardConfigLoader
 
 /** test the DropwizardConfigLoader */
 public class DropwizardConfigLoaderTest extends GroovyTestCase {

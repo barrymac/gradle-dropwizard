@@ -1,6 +1,5 @@
-package net.swisstech.gradle.dropwizard;
+package net.swisstech.dropwizard
 
-import java.io.File;
 import org.yaml.snakeyaml.Yaml;
 
 public class DropwizardConfigLoader {
@@ -37,6 +36,7 @@ public class DropwizardConfigLoader {
 			url = "${conn.type}://localhost:${conn.port}${server.adminContextPath}"
 			cfg.urls.put(key, url)
 
+
 			cfg.ports << conn.port
 		}
 
@@ -44,12 +44,3 @@ public class DropwizardConfigLoader {
 	}
 }
 
-public class DropwizardConfig {
-	/** all ports of the config */
-	Set<Integer> ports = [] as Set
-
-	/**
-	 * base urls reconstructed from config.
-	 */
-	Map<String, String> urls = [:]
-}
