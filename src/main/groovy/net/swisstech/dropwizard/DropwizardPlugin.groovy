@@ -135,7 +135,6 @@ class DropwizardPlugin implements Plugin<Project> {
         def config = new File(dropwizardConfigFile).text
         urlsToBeMocked.each { config = config.replaceAll(it, "http://localhost:$stubPort") }
         def configFile = "wiremock-$dropwizardConfigFile"
-        printf configFile
         new File(configFile).write(config)
         return configFile
     }
