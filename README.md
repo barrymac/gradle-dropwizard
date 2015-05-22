@@ -1,7 +1,7 @@
 README
 =====
 
-Dropwizard plugin to run a gradle task after dropwizard is started and optionally use wiremock to substitute external services
+Dropwizard plugin to run a gradle task after dropwizard is started, optionally using wiremock to substitute external services, and shutdown dropwizard afterwards
 
 ## Example Usage:
 
